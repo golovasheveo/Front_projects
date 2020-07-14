@@ -5,3 +5,24 @@
     background-color: antiquewhite;
     text-transform: uppercase;
 }
+
+.thumbnail-list {
+    /*removing dots*/
+    list-style: none;
+}
+.thumbnails-image {
+    width: 100%;
+    border-radius: 600px;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+.thumbnail-title {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: lightskyblue;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
