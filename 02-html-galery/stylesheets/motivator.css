@@ -63,7 +63,7 @@ a {
 body {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: black;
 }
 
 /*.thumbnails-item+.thumbnails-item {*/
@@ -80,7 +80,7 @@ body {
 .detail-title {
     font-size: 1.5em;
     font-style: italic;
-    background-color: darkorange;
+    background-color: #ff0084;
     color: white;
     position: absolute;
     bottom: 1vh;
