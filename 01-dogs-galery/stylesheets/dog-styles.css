@@ -13,12 +13,13 @@
     max-height: 20vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
 .thumbnails-image {
     width: 15vh;
-    height: 12vh;
+    height: 10vh;
     display: block;
 
 
@@ -40,6 +41,9 @@ a {
 
 .thumbnails-item {
     border: solid 1px red;
+    margin-top: 2vh;
+    margin-right: 1vh;
+
 
     /*overflow: hidden;*/
 
