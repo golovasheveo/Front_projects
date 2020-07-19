@@ -102,5 +102,15 @@ body {
 }
 html, body{
     height: 100%;
-
+}
+@media (min-width: 568px ){
+    .thumbnails-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: 80vh;
+        order: -1;
+    }
+    .main-content {
+        flex-direction: row;
+    }
 }
