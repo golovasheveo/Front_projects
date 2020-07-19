@@ -1,40 +1,40 @@
 @font-face {
-    font-family: mr_PotraLightG;
-    src: url("/fonts/19700.ttf") format("truetype");
-    /*src: url("/fonts/LAKESHOR-webfont.svg")*/
-    /*format("svg");*/
+    font-family: lakeshor;
+    src: url("/fonts/LAKESHOR-webfont.svg") format("svg");
+    src: url("/fonts/LAKESHOR-webfont.woff") format("woff");
 }
-
 @font-face {
     font-family: airstream;
-    src: url("/fonts/LAKESHOR-webfont.svg")
-    format("svg");
+    src: url("/fonts/Airstream-webfont.svg") format("svg");
+    src: url("/fonts/Airstream-webfont.woff") format("woff");
 }
-
 .logo-title {
     text-align: center;
-    font-size: 2em;
+    font-size: 3.5em;
     font-weight: bold;
     background-color: antiquewhite;
     text-transform: uppercase;
-    font-family: mr_PotraLightG, monospace;
+    font-family: lakeshor;
 }
 
 .thumbnails-list {
     /*removing dots*/
     list-style: none;
     overflow-y: auto;
-    max-height: 20vh;
+    max-height: 28vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-left: 0;
+
 }
 
 .thumbnails-image {
     width: 15vh;
     height: 10vh;
     display: block;
+
+
 }
 
 .thumbnails-title {
@@ -55,6 +55,7 @@ a {
     border: solid 1px red;
     margin-top: 2vh;
     margin-right: 1vh;
+
 }
 
 /*#dog1 {*/
@@ -64,6 +65,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: aqua;
+    font-size: 1.8vw;
 }
 
 /*.thumbnails-item+.thumbnails-item {*/
@@ -78,15 +80,15 @@ body {
     align-items: center;
 }
 .detail-title {
-    font-size: 1.5em;
+    font-size: 3em;
+    text-shadow: 2px 4px 6px black;
     font-style: italic;
     background-color: darkorange;
     color: white;
     position: absolute;
-    bottom: 1vh;
     left: auto;
-    text-shadow: 2px 4px 0 darkmagenta;
-    font-family: airstream, monospace;
+    bottom: 1vh;
+    font-family: airstream;
 }
 .detail-image {
     width: 65vw;
@@ -96,8 +98,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 }
 html, body{
     height: 100%;
+
 }
