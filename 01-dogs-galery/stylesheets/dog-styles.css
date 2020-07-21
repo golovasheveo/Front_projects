@@ -43,6 +43,8 @@
     font-size: 1.5em;
     background-color: aliceblue;
     color: black;
+
+
 }
 
 a {
@@ -78,13 +80,6 @@ body {
     align-items: center;
     transition: 3s ease-in-out;
 }
-
-.is-tiny {
-    transform: scale(0.001);
-    transition: 0ms;
-}
-
-
 .detail-title {
     font-size: 3em;
     text-shadow: 2px 4px 6px black;
@@ -95,6 +90,7 @@ body {
     left: auto;
     bottom: 1vh;
     font-family: airstream;
+
 }
 .detail-image {
     width: 65vw;
@@ -110,9 +106,13 @@ html, body{
     height: 100%;
 
 }
-
-
-
+.thumbnails-item:hover {
+    transform: scale(1.1);
+}
+.is-tiny {
+    transform: scale(0.001);
+    transition: 0ms ;
+}
 @media (min-width: 568px) {
     .thumbnails-list {
         flex-direction: column;
@@ -121,46 +121,45 @@ html, body{
         order: -1;
         justify-content: left;
     }
-
     .main-content {
         flex-direction: row;
         /*justify-content: left;*/
         align-items: center;
-
     }
-
     .thumbnails-item {
         margin-top: 0;
     }
-
-    .thumbnails-item + .thumbnails-item {
+    .thumbnails-item+.thumbnails-item {
         margin-top: 1vh;
     }
-
     .thumbnails-image {
         width: 15vw;
         height: 10vw;
     }
-
     .logo-title {
         margin: 5px;
         font-size: 2em;
     }
-
     .detail-image {
         width: 50vw;
         height: 40vw;
     }
-
     .detail-title {
         font-size: 1.7em;
     }
-
+}
 @media (min-width: 1000px) {
-    .main-content {
-        flex-direction: row;
-        /*justify-content: left;*/
-        align-items: center;
-    }    }
+    .thumbnails-title {
+        font-size: 1em;
+    }
+    .detail-title {
+        font-size: 1.8em;
+        display: inline-block;
+        width:100%
+    }
+    .logo-title {
+
+        font-size: 1.5em;
+    }
 }
 

@@ -12,16 +12,18 @@ function showDetails() {
     detailFrame.classList.add('is-tiny');
     setTimeout(function () {
         detailFrame.classList.remove('is-tiny');
-    }, 1, )
+    }, 0 )
 }
 
 function addListener(thumbnail) {
     thumbnail.addEventListener('click', function(event) {
+        console.log(event)
         event.preventDefault()// cancel default behavior of another page loading
         setDetails(thumbnail);
         showDetails();
     })
 }
-thumbnails.forEach(addListener);
-
-
+// thumbnails.forEach(addListener);
+for (var i = 0; i < thumbnails.length; i++) {
+    addListener(thumbnails[i]);
+}
