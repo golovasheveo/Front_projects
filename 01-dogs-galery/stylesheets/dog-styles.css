@@ -1,12 +1,12 @@
 @font-face {
     font-family: lakeshor;
-    src: url("/fonts/LAKESHOR-webfont.svg") format("svg");
-    src: url("/fonts/LAKESHOR-webfont.woff") format("woff");
+    src: url("fonts/LAKESHOR-webfont.svg") format("svg");
+    src: url("fonts/LAKESHOR-webfont.woff") format("woff");
 }
 @font-face {
     font-family: airstream;
-    src: url("/fonts/Airstream-webfont.svg") format("svg");
-    src: url("/fonts/Airstream-webfont.woff") format("woff");
+    src: url("fonts/Airstream-webfont.svg") format("svg");
+    src: url("fonts/Airstream-webfont.woff") format("woff");
 }
 .logo-title {
     text-align: center;
@@ -40,7 +40,7 @@
 .thumbnails-title {
     display: block;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3em;
     background-color: aliceblue;
     color: black;
 
@@ -113,7 +113,59 @@ html, body{
     transform: scale(0.001);
     transition: 0ms ;
 }
+.hidden-class.detail-frame {
+    display: none;
+}
+#hide-button {
+    position: absolute;
+    top:2vh;
+    right:12vh;
+}
+.hidden-class.thumbnails-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-height: 80vh;
+    justify-content: left;
+}
+
+.hidden-class .thumbnails-image {
+    width: 70vw;
+    height: 62vw;
+}
+
+.hidden-class .thumbnails-title {
+    font-size: 3em;
+}
+
 @media (min-width: 568px) {
+    .hidden-class.thumbnails-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 120vh;
+        align-items: center;
+        justify-content: left;
+        overflow-x: auto;
+    }
+
+    .hidden-class .thumbnails-image {
+        width: 30vw;
+        height: 20vw;
+    }
+
+    .hidden-class .thumbnails-title {
+        font-size: 2em;
+    }
+
+    .thumbnails-title {
+        font-size: 1em;
+    }
+
+    #hide-button {
+        position: absolute;
+        top:2vh;
+        right:2vw;
+    }
     .thumbnails-list {
         flex-direction: column;
         flex-wrap: nowrap;
