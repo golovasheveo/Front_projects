@@ -1,4 +1,7 @@
 var array = [];
+var srcArray = [];
+var dstArray = [];
+
 var N_NUMBERS = 5;
 
 function createRandomArray(array) {
@@ -8,6 +11,8 @@ function createRandomArray(array) {
 }
 
 createRandomArray(array);
+createRandomArray(srcArray);
+createRandomArray(dstArray);
 //adding
 // console.log('-'.repeat(50));
 // console.log('Adding operations');
@@ -34,8 +39,8 @@ createRandomArray(array);
 // }
 // ).toString())
 
-console.log('-'.repeat(50));
-console.log('array before ****: ', array.toString());;
+// console.log('-'.repeat(50));
+// console.log('array before ****: ', array.toString());;
 
 
 // var sum = 0;
@@ -50,10 +55,43 @@ console.log('array before ****: ', array.toString());;
 // },0)
 // console.log('sum: ', sum)
 
+/*
 var max = array.reduce(function (max, value) {
     if (value > max) { return value; } else { return max;}
 })
 
 console.log('max: ', max)
+*/
+
+// console.log('after mapping each number to string with prefix "str"',
+//    array.map(function (value) {
+//      return 'str' + value;
+//  }).toString())
+//
+// console.log('after flat mapping each number to digits',
+//     array.flatMap(function (value) {
+//         return value.toString().split('');
+//     })
+//     )
+//
+// createRandomArray(array);
+// createRandomArray(srcArray);
+// createRandomArray(dstArray);
+//
+// function arrayCopy(src, srcPos, dest, destPos, length )
+// {
+//     dest.splice(srcPos, length, src.slice(srcPos, srcPos + length));
+//     console.log('dest', dest.string());
+// }
+//
+// arrayCopy(srcArray, 2, destPos, destPos,)
+
+function arrayCopy(src, srcPos, dest, destPos, length) {
+    dest.splice(destPos, 0, ...src.slice(srcPos, srcPos + length));
+}
 
 
+var ar = [1, 2, 3, 4, 5]
+arrayCopy(ar, 1, ar,2, 3);
+
+console.log(ar.toString())
