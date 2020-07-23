@@ -87,7 +87,17 @@ console.log('max: ', max)
 // arrayCopy(srcArray, 2, destPos, destPos,)
 
 function arrayCopy(src, srcPos, dest, destPos, length) {
-    dest.splice(destPos, 0, ...src.slice(srcPos, srcPos + length));
+    var inserted = src.splice(srcPos, srcPos + length);
+    if (destPos >= dest.length) {
+        inserted.forEach(function (value, index) {
+            dest[destPos + index] = value;
+        })
+    } else
+    {
+        dest.splice(destPos,0,...inserted);
+    }
+
+    // dest.splice(destPos, 0, ...src.slice(srcPos, srcPos + length));
 }
 
 
