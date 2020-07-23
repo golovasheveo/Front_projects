@@ -1,18 +1,18 @@
-var array = [];
-var srcArray = [];
-var dstArray = [];
-
-var N_NUMBERS = 5;
-
-function createRandomArray(array) {
-    for (var i = 0; i < N_NUMBERS; i++) {
-        array[i] = Math.round(Math.random()*50)
-    }
-}
-
-createRandomArray(array);
-createRandomArray(srcArray);
-createRandomArray(dstArray);
+// var array = [];
+// var srcArray = [];
+// var dstArray = [];
+//
+// var N_NUMBERS = 5;
+//
+// function createRandomArray(array) {
+//     for (var i = 0; i < N_NUMBERS; i++) {
+//         array[i] = Math.round(Math.random()*50)
+//     }
+// }
+//
+// createRandomArray(array);
+// createRandomArray(srcArray);
+// createRandomArray(dstArray);
 //adding
 // console.log('-'.repeat(50));
 // console.log('Adding operations');
@@ -86,22 +86,66 @@ console.log('max: ', max)
 //
 // arrayCopy(srcArray, 2, destPos, destPos,)
 
-function arrayCopy(src, srcPos, dest, destPos, length) {
-    var inserted = src.splice(srcPos, srcPos + length);
-    if (destPos >= dest.length) {
-        inserted.forEach(function (value, index) {
-            dest[destPos + index] = value;
-        })
-    } else
-    {
-        dest.splice(destPos,0,...inserted);
-    }
+// function arrayCopy(src, srcPos, dest, destPos, length) {
+//     var inserted = src.splice(srcPos, srcPos + length);
+//     if (destPos >= dest.length) {
+//         inserted.forEach(function (value, index) {
+//             dest[destPos + index] = value;
+//         })
+//     } else
+//     {
+//         dest.splice(destPos,0,...inserted);
+//     }
+//
+//     // dest.splice(destPos, 0, ...src.slice(srcPos, srcPos + length));
+// }
+//
+//
+// var ar = [1, 2, 3, 4, 5]
+// arrayCopy(ar, 1, ar,2, 3);
 
-    // dest.splice(destPos, 0, ...src.slice(srcPos, srcPos + length));
+
+
+// 2.	Write function count that returns how many times a given element encountered in a given array
+
+var array = ["abc","lmn","cd","abc","abc"];
+var arrayTemp = ["a1","b2","c3","d4"]
+
+function getCountTemp(array,str) {
+    count = 0;
+    var res = array.reduce(function (a,b,c,d) {
+        console.log("iteration:",count++)
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+        return count;
+    },0)
+    return count;
 }
 
+// Function get count
 
-var ar = [1, 2, 3, 4, 5]
-arrayCopy(ar, 1, ar,2, 3);
+function getCount(array,str) {
+    var count = 0;
+    var res = array.reduce(function (a,b) {
+        if (b===str) ++count;
+        return count;
+    },0)
+    return count;
+}
 
-console.log(ar.toString())
+getCountTemp(arrayTemp,"abc")
+console.log('------------------------------');
+console.log('Initial array: ',array.toString());
+console.log("Count: ", getCount(array, "abc"));
+
+
+/* 3.	Write function ulSurround that surrounds array of strings inside <ul></ul> element.
+Example of input array
+var strings=["abc","lmn","cd"]
+Output array for the above example-
+["<ul>","<li>abc</li>","<li>lmn</li>","<li>cd</li>","</ul>"]
+*/
+
+
