@@ -108,44 +108,80 @@ console.log('max: ', max)
 
 // 2.	Write function count that returns how many times a given element encountered in a given array
 
-var array = ["abc","lmn","cd","abc","abc"];
-var arrayTemp = ["a1","b2","c3","d4"]
+// var array = ["abc","lmn","cd","abc","abc"];
+// var arrayTemp = ["a1","b2","c3","d4"]
+//
+// function getCountTemp(array,str) {
+//     count = 0;
+//     var res = array.reduce(function (a,b,c,d) {
+//         console.log("iteration:",count++)
+//         console.log(a);
+//         console.log(b);
+//         console.log(c);
+//         console.log(d);
+//         return count;
+//     },0)
+//     return count;
+// }
+//
+// // Function get count
+//
+// function getCount(array,str) {
+//     var count = 0;
+//     var res = array.reduce(function (a,b) {
+//         if (b===str) ++count;
+//         return count;
+//     },0)
+//     return count;
+// }
+//
+// getCountTemp(arrayTemp,"abc")
+// console.log('------------------------------');
+// console.log('Initial array: ',array.toString());
+// console.log("Count: ", getCount(array, "abc"));
+//
+//
+// /* 3.	Write function ulSurround that surrounds array of strings inside <ul></ul> element.
+// Example of input array
+// var strings=["abc","lmn","cd"]
+// Output array for the above example-
+// ["<ul>","<li>abc</li>","<li>lmn</li>","<li>cd</li>","</ul>"]
+// */
+//
+// var strings=["abc","lmn","cd"];
+//
+// function urlSurround(stringsArray) {
+//     stringsArray = [...stringsArray.map(function (value) {
+//         return "<li>"+value+"</li>";
+//     })]
+//     stringsArray.unshift("<ul>");
+//     stringsArray.push("</ul>")
+//
+//     return stringsArray;
+// }
+//
+// console.log("Strings: ", strings,"resSrtings: ", urlSurround(strings));
 
-function getCountTemp(array,str) {
-    count = 0;
-    var res = array.reduce(function (a,b,c,d) {
-        console.log("iteration:",count++)
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-        return count;
-    },0)
-    return count;
+/*4.	Write function move(array, index, offset) that in a given array moves element at
+a given index on a given offset positions (if offset > 0 -> to right, otherwise to left).
+In the case a move can't be executed the function throws error (throw new Error(message))
+with message containing either "wrong index" or "wrong position"
+Examples:
+var numbers=[1,2,3,4,5,6,7]; move(numbers,3,-1) -> numbers=[1,2,4,3,5,6,7];
+move(numbers,7,-3) -> "wrong index";
+move(numbers,5,4)->"wrong offset";
+
+move(numbers,2,4)->numbers=[1,2,4,5,6,7,3].
+Note: all examples imply the original array of numbers (var numbers=[1,2,3,4,5,6,7])*/
+
+function move(item, index, array) {
+    return old_array.map(( item , index, array )=>{
+        if( index === old_index ) return array[ new_index ];
+        else if( index === new_index ) return array[ old_index ];
+        else return item;
+    });
+
+var numbers = [1,2,3,4,5,6,7]
+console.log("Changed array", move( 0, 1, numbers ) );
 }
-
-// Function get count
-
-function getCount(array,str) {
-    var count = 0;
-    var res = array.reduce(function (a,b) {
-        if (b===str) ++count;
-        return count;
-    },0)
-    return count;
-}
-
-getCountTemp(arrayTemp,"abc")
-console.log('------------------------------');
-console.log('Initial array: ',array.toString());
-console.log("Count: ", getCount(array, "abc"));
-
-
-/* 3.	Write function ulSurround that surrounds array of strings inside <ul></ul> element.
-Example of input array
-var strings=["abc","lmn","cd"]
-Output array for the above example-
-["<ul>","<li>abc</li>","<li>lmn</li>","<li>cd</li>","</ul>"]
-*/
-
 
