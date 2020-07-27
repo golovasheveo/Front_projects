@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<main>
+    <div class="input-form content-block">
+        <input type="text" autocomplete="off" name="name" placeholder="Name">
+        <input type="text" autocomplete="off" name="producer" placeholder="Producer">
+        <input type="text" autocomplete="off" name="year" placeholder="Year">
+    </div>
+    <div class="filter-form content-block">
+        <div>
+            <button id="add">Add movie</button>
+            <a href="#" id="generate" class="small-link">Generate data</a>
+        </div>
+        <div>
+            <button id="filter-year">Show movies of year</button>
+            <input type="text" name="year-filter" placeholder="Year">
+        </div>
+        <div>
+            <button id="filter-producer">Show movies of producer</button>
+            <input type="text" name="producer-filter" placeholder="Producer">
+        </div>
+    </div>
+    <div class="results-list content-block">
+        <div>
+            <h4>All movies</h4>
+            <ol id="all-movies"></ol>
+        </div>
+        <div>
+            <h4 id="year-movies-title">Year movies</h4>
+            <ol id="year-movies"></ol>
+        </div>
+        <div>
+            <h4 id="producer-movies-title">Producer movies</h4>
+            <ol id="producer-movies"></ol>
+        </div>
+    </div>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
