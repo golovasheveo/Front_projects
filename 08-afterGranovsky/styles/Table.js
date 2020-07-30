@@ -1,16 +1,16 @@
 function TableOfOrder (headSelector, whereToPlaceTableSelector) {
     this.$headSelector = $(headSelector)
     this.$trHeader = $(whereToPlaceTableSelector)
-}
 
-function createHeader(headers, tr) {
+    this.createHeader= function (headers) {
 
-    var $thElements = headers.map(function (header) {
-        return $('<th>', {
-            text: header
+        var $thElements = headers.map(function (header) {
+            return $('<th>', {
+                text: header
+            })
         })
-    })
-    tr.append($thElements)
+        this.$trHeader.append($thElements)
+    }
 }
 
 TableOfOrder.prototype.getHeader = function () {
@@ -20,5 +20,5 @@ TableOfOrder.prototype.getHeader = function () {
             return arr;
         },[])
     console.log ("headers: ", headers);
-    createHeader(headers,this.$trHeader);
+    this.createHeader(headers);
 }

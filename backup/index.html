@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="card">
+    <div class="card-header">
+        <h3>Add Persons</h3>
+    </div>
+    <div class="card-body">
+        <form id="form-order">
+            <div class="form-group">
+                <label >First Name</label>
+                <input type="text" class="form-control" name="name">
+            </div>
+            <div class="form-group">
+                <label >Second Name</label>
+                <input type="text" class="form-control" name="second-name">
+            </div>
+            <div class="form-group">
+                <label >Salary</label>
+                <input type="number" class="form-control" name="salary" min="1000" max="30000">
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-primary" type="reset">Reset</button>
+        </form>
+    </div>
+
+    <div class="card-body">
+
+    <table class="table">
+        <thead>
+        <tr class="table-light"> Result table </tr>
+        <tr id="head-tr">
+
+        </tr>
+        </thead>
+        <tbody id="body-tr">
+
+        </tbody>
+    </table>
+    </div>
+
+</div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scr/mainConstructor.js"></script>
+<script src="scr/storage.js"></script>
+<script src="scr/table.js"></script>
+<script src="scr/main.js"></script>
+</html>
