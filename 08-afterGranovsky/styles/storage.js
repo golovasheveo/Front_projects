@@ -4,5 +4,5 @@ function DataStorage() {
 
 DataStorage.prototype.addToStorage = function (dataOfOrder) {
     this.dataStorage.push(dataOfOrder);
-    console.log("Data storage: ",this.dataStorage)
+    console.log("data from storage" ,this.dataStorage);
 }
