@@ -3,7 +3,7 @@ function FormConstructor(selector) {
     }
 
 
-FormConstructor.prototype.funcziaVnutriFormConstructor =
+FormConstructor.prototype.getFromForm =
     function (addOrderToContainer) {
     this.$nameOfVariable.on('submit', function(event) {
         event.preventDefault();
