@@ -2,14 +2,15 @@ var formPerson = new FormConstructor('#form-order');
 
 var container = new DataStorage();
 
+var table = new TableOfOrder("#form-order", "#head-tr", "#body-tr");
+table.getHeader();
+
+
 formPerson.funcziaVnutriFormConstructor(addOrdertoContainer) ;
 
 function addOrdertoContainer(order) {
     container.addToStorage(order);
+    console.log("inside order", order)
+    table.addRows(order)
 }
-
-var dummy = {name: "12", secondname: "12", salary: "55"};
-var table = new TableOfOrder("#form-order", "#head-tr");
-table.getHeader();
-
 
