@@ -51,9 +51,9 @@ TableOfOrder.prototype.addRows = function (objectToAddingRows) {
 
    $trElement.append($tdRemove);
 
-    $tdRemove.on('click', function() {
+   $tdRemove.on('click', function() {
             $trElement.remove();
-            console.log('Row removed')
+            console.log('Row removed', objectToAddingRows)
         }.bind(this))
 }
 
