@@ -1,11 +1,12 @@
 //controller with inner logics
-var formOrder = new FormHandler('#form-order');
+var formOrder = new FormatHandler('#form-order');
 var coffeeOrders = new Orders();
-var tableOrders = new Table('#tr-id', '#tbody-id',
-    [ 'email', 'coffee','size', 'strength', 'flavor'], 'email', function(email) {
-        coffeeOrders.removeOrder(email);
-    })
-formOrder.addHandler(addOrder );
+var tableOrders = new Table('#tr-head', '#body-tr',
+    [ 'email', 'coffee','size', 'strength', 'flavor'], 'size', function(email) {
+        return coffeeOrders.removeOrder(email);
+    });
+formOrder.addHandler(addOrder);
+
 function addOrder(order) {
     var res = coffeeOrders.addOrder(order);
     if(!res) {
@@ -14,4 +15,3 @@ function addOrder(order) {
         tableOrders.addRow(order);
     }
 }
-

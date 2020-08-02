@@ -1,4 +1,4 @@
-//fake data processor
+//data processor communicating with server/ server imitator(fake data)
 function Orders() {
     this.orders = [];
 }
@@ -12,14 +12,14 @@ Orders.prototype.addOrder = function (order) {
     this.orders.push(order);
     return true;
 }
-Orders.prototype.removeOrder = function(email) {
+
+Orders.prototype.removeOrder = function (email) {
     var index = this.orders.findIndex(function (o) {
-        return email === o.email;
+        return email === o.size;
     });
-    if (index < 0) {
+    if(index<0){
         return false;
     }
-    this.orders.splice(index, 1);
-    return true;
+    this.orders.splice(index,1);
+    return  true;
 }
-
