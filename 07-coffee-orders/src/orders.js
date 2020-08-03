@@ -1,5 +1,5 @@
 //data processor communicating with server/ server imitator(fake data)
-class Orders {
+export default class Orders {
     constructor() {
         this.orders = [];
     }
