@@ -1,5 +1,7 @@
 import _ from 'lodash'
 
-console.log(_.countBy(['ab', 'lmn', 'ab'], Math.floor));
+const res = _.countBy(['ab','lmn','ab', length]);
+
+console.log("Result",res);
 
 
