@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="76fb90cc-e668-47b2-b314-b6841aaf7ff7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../10-var-let-content/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-var-let-content/.idea/10-var-let-content.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-var-let-content/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-var-let-content/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-var-let-content/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/testhello.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/src/form-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07-coffee-orders/src/form-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07-coffee-orders/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/src/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07-coffee-orders/src/orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/src/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07-coffee-orders/src/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-var-let-content/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../10-var-let-content/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1fctfcSylsf5UhKqVMArN9pBU6W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76fb90cc-e668-47b2-b314-b6841aaf7ff7" name="Default Changelist" comment="" />
+      <created>1596529312712</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596529312712</updated>
+      <workItem from="1596529315362" duration="60000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

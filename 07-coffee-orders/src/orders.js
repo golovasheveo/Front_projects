@@ -1,9 +1,10 @@
-//data processor communicating with server/ server imitator(fake data)
+//fake data processor
 export default class Orders {
     constructor() {
         this.orders = [];
     }
-    addOrder (order) {
+
+    addOrder(order){
         if (this.orders.findIndex(function (o) {
             return order.email === o.email;
         }) !== -1) {
@@ -12,9 +13,10 @@ export default class Orders {
         this.orders.push(order);
         return true;
     }
-    removeOrder(email) {
-        var index = this.orders.findIndex(function (o) {
-            return email === o.size;
+
+    removeOrder (email) {
+        const index = this.orders.findIndex(function (o) {
+            return email === o.email;
         });
         if (index < 0) {
             return false;
@@ -24,28 +26,31 @@ export default class Orders {
     }
 
 }
+
 export {Orders}
 
-/*
-Orders.prototype.addOrder = function (order) {
-    if (this.orders.findIndex(function (o) {
-        return order.email === o.email;
-    }) !== -1) {
-        return false;
-    }
-    this.orders.push(order);
-    return true;
-}
+// function Orders() {
+//     this.orders = [];
+// }
 
-Orders.prototype.removeOrder = function (email) {
-    var index = this.orders.findIndex(function (o) {
-        return email === o.size;
-    });
-    if(index<0){
-        return false;
-    }
-    this.orders.splice(index,1);
-    return  true;
-}
+// Orders.prototype.addOrder = function (order) {
+//     if (this.orders.findIndex(function (o) {
+//         return order.email === o.email;
+//     }) !== -1) {
+//         return false;
+//     }
+//     this.orders.push(order);
+//     return true;
+// }
 
- */
+// Orders.prototype.removeOrder = function(email) {
+//     const index = this.orders.findIndex(function (o) {
+//         return email === o.email;
+//     });
+//     if (index < 0) {
+//         return false;
+//     }
+//     this.orders.splice(index, 1);
+//     return true;
+// }
+
