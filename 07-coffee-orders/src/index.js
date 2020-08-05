@@ -34,29 +34,3 @@ function addOrder(order) {
       tableOrders.addRow(order);
    }
 }
-
-// //controller with inner logics
-// import {FormHandler} from './form-handler';
-// import Orders from "./orders";
-// import {Table} from "./table";
-//
-// const formOrder = new FormHandler('#form-order');
-// const coffeeOrders = new Orders();
-//
-//
-// const tableOrders = new Table('#tr-id', '#tbody-id',
-//     headersKeys, removeData);
-//
-// formOrder.addHandler(addOrder);
-// function addOrder(order) {
-//     console.log(order);
-//    const res = coffeeOrders.addOrder(order);
-//    if(!res) {
-//       return `${removeData.message} ${order.email} already exists`;//expression
-//       //return removeData.message + ' ' + order.email + ' already exists';  same as above
-//    } else {
-//       tableOrders.addRow(order);
-//    }
-// }
-//
-//

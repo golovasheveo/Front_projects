@@ -19,13 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ced18369-4c06-446b-9b9c-07651c25ffdf" name="Default Changelist" comment="Add emlp 0508">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ced18369-4c06-446b-9b9c-07651c25ffdf" name="Default Changelist" comment="generateEmployees">
+      <change afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mainMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07-coffee-orders/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -41,6 +54,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Front_projects\08-employessAppl\dist" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596628526912</updated>
-      <workItem from="1596628529157" duration="6124000" />
+      <workItem from="1596628529157" duration="17131000" />
     </task>
     <task id="LOCAL-00001" summary="Add emlp 0508">
       <created>1596630494715</created>
@@ -61,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596630494717</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="generateEmployees">
+      <created>1596636508379</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596636508379</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,9 +123,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add emlp 0508" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add emlp 0508" />
+    <MESSAGE value="generateEmployees" />
+    <option name="LAST_COMMIT_MESSAGE" value="generateEmployees" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596642851648">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596642851648" />
+    <state width="1493" height="172" key="GridCell.Tab.0.bottom" timestamp="1596647078539">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="172" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596647078539" />
+    <state width="1493" height="172" key="GridCell.Tab.0.center" timestamp="1596647078539">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="172" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596647078539" />
+    <state width="1493" height="172" key="GridCell.Tab.0.left" timestamp="1596647078539">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="172" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596647078539" />
+    <state width="1493" height="172" key="GridCell.Tab.0.right" timestamp="1596647078539">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="172" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596647078539" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596636126188">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
