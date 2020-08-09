@@ -1,16 +1,17 @@
 import $ from 'jquery';
 
 export default class Spinner {
+    //'#spinnerId'
     constructor(selector) {
-        //TODO
+        this.$selector = $(selector)
     }
 
     start() {
-        //starting spinner
+        this.$selector.removeClass('invisible');
     }
 
     stop() {
-        //stopping spinner
+        this.$selector.addClass('invisible');
     }
 
 }
