@@ -2,21 +2,23 @@ import {FormHandler} from "./form";
 import Storage from "./storage";
 import {Table} from "./table";
 import {mainMenu} from "./mainMenu";
+
 import $ from 'jquery';
 
-var db = new Storage();
+
+var formHandler = new FormHandler('#formAddEmployee');
+formHandler.takingDataToObj(functionLayout)
 
 
-var menu = new mainMenu(functionLayout);
+var menu = new mainMenu();
 menu.openAddForm();
 menu.openRandomForm('#openRandomForm');
 menu.openTable();
 
 
-function functionLayout(obj) {
-    db.addToStorage(obj);
-    // table.addRows(obj);
-}
+
+
+
 
 
 

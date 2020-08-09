@@ -1,23 +1,32 @@
 import $ from 'jquery';
 import {FormHandler} from "./form";
 import {Table} from "./table";
+import Storage from "./storage";
+
+var db = new Storage();
 
 var $addForm = $('#openAddForm');
 var $domTable = $('#openTable');
 var $formAddEmployee = $('#formAddEmployee');
 
-var formHandler = new FormHandler('#formAddEmployee');
-var table = new Table("#formAddEmployee","#head-tr","#body-tr", "employeeId", function (obj) {
+// var formHandler = new FormHandler('#formAddEmployee');
+var table = new Table("#formAddEmployee", "#head-tr", "#body-tr", "employeeId", function (obj) {
     db.removeFromStorage();
 });
+var $formTable = $("#body-tr");
 
+
+const functionLayout = obj => {
+    db.addToStorage(obj);
+
+    table.addRows(db.storage);
+};
 
 class mainMenu {
-    constructor(formFunction) {
+    constructor() {
         this.$cardAddEmployee = $('#cardAddEmployee');
         this.$cardRandomEmployee = $('#cardRandomEmployee');
         this.tableEmployee = $('#tableEmployee');
-        this.formFn = formFunction;
     }
 
 
@@ -25,7 +34,7 @@ class mainMenu {
         $addForm.on('click', function () {
             console.log("Click on add");
             this.$cardAddEmployee.toggleClass('hide');
-            formHandler.takingDataToObj(this.formFn)
+            // formHandler.takingDataToObj(functionLayout)
         }.bind(this))
     }
 
@@ -41,6 +50,9 @@ class mainMenu {
             console.log("Click on table");
             this.tableEmployee.toggleClass('hide');
             table.getHeader(formHandler.fieldSerialization($formAddEmployee))
+
+            // console.log("number of childrens", $formTable.children("tr"));
+            //
         }.bind(this))
     }
 }

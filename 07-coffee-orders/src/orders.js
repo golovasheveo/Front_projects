@@ -1,56 +1,35 @@
 //fake data processor
+const timeout = 3000 //3 sec timeout
+function getPromise(value) {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(value)
+        }, timeout)
+    })
+}
 export default class Orders {
     constructor() {
         this.orders = [];
+        //console.log('orders')
     }
-
-    addOrder(order){
+    addOrder(order) {
         if (this.orders.findIndex(function (o) {
             return order.email === o.email;
         }) !== -1) {
-            return false;
+            return getPromise(false);
         }
         this.orders.push(order);
-        return true;
+        return getPromise(true);
     }
-
-    removeOrder (email) {
-        const index = this.orders.findIndex(function (o) {
-            return email === o.email;
-        });
+    removeOrder(email) {
+        const index = this.orders.findIndex(o => email === o.email);
         if (index < 0) {
-            return false;
+            return getPromise(false);
         }
         this.orders.splice(index, 1);
-        return true;
+        return getPromise(true);
     }
-
 }
 
-export {Orders}
 
-// function Orders() {
-//     this.orders = [];
-// }
-
-// Orders.prototype.addOrder = function (order) {
-//     if (this.orders.findIndex(function (o) {
-//         return order.email === o.email;
-//     }) !== -1) {
-//         return false;
-//     }
-//     this.orders.push(order);
-//     return true;
-// }
-
-// Orders.prototype.removeOrder = function(email) {
-//     const index = this.orders.findIndex(function (o) {
-//         return email === o.email;
-//     });
-//     if (index < 0) {
-//         return false;
-//     }
-//     this.orders.splice(index, 1);
-//     return true;
-// }
 
