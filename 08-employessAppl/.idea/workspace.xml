@@ -25,15 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ced18369-4c06-446b-9b9c-07651c25ffdf" name="Default Changelist" comment="MasterCommit">
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/table.js" afterDir="false" />
-    </list>
+    <list default="true" id="ced18369-4c06-446b-9b9c-07651c25ffdf" name="Default Changelist" comment="add flag to empl" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +95,7 @@
       <updated>1596628526912</updated>
       <workItem from="1596628529157" duration="18680000" />
       <workItem from="1596734432906" duration="28745000" />
-      <workItem from="1596961242549" duration="3557000" />
+      <workItem from="1596961242549" duration="3932000" />
     </task>
     <task id="LOCAL-00001" summary="Add emlp 0508">
       <created>1596630494715</created>
@@ -147,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596737818822</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add flag to empl">
+      <created>1596966662506</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596966662506</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +181,8 @@
     <MESSAGE value="generateEmployees" />
     <MESSAGE value="class mainMenu" />
     <MESSAGE value="MasterCommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="MasterCommit" />
+    <MESSAGE value="add flag to empl" />
+    <option name="LAST_COMMIT_MESSAGE" value="add flag to empl" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596642851648">
@@ -217,14 +217,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="657" y="326" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1596735414780" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596736923464">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596966747558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596736923464" />
-    <state x="650" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1596735069199">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596966747558" />
+    <state x="650" y="146" width="461" height="532" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1596966733470">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="650" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.824@0.0.1536.824" timestamp="1596735069199" />
+    <state x="650" y="146" width="461" height="532" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.824@0.0.1536.824" timestamp="1596966733470" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1596821758685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
