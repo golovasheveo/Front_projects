@@ -1,4 +1,6 @@
 import $ from 'jquery';
+import {Table} from "./table";
+import storage from "./storage";
 
 class FormHandler {
     constructor(selector) {
@@ -7,9 +9,10 @@ class FormHandler {
 
     takingDataToObj (addToStorage) {
         this.$formSelector.on('submit', function (event) {
+            console.log('waiting', this)
             event.preventDefault();
+
             let dataObj = this.fieldSerialization(this.$formSelector);
-            console.log('after', dataObj)
             addToStorage(dataObj);
             event.target.reset();
         }.bind(this))
