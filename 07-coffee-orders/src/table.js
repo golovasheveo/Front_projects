@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import Spinner from "./spinner";
-var spinner = new Spinner('#spinnerId');
 
 function createHeaders($trHeadElement, headers, removeFn) {
     //getting <th> elements
@@ -55,11 +54,9 @@ class Table {
             $trElement.append($tdRemove);
             $tdRemove.on('click', async () => {
                 if(confirm(`you are going remove ${this.removeMessage} ${object[this.keyId]}`) ){
-                    spinner.start()
                     if(await this.removeFn(object[this.keyId])){
                         $trElement.remove();
                     };
-                    spinner.stop()
 
                 }
 

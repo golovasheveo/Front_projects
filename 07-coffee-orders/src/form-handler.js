@@ -2,7 +2,6 @@
 //performing an action from inner logics with the created object
 import $ from 'jquery';
 import Spinner from "./spinner";
-var spinner = new Spinner('#spinnerId');
 class FormHandler {
     constructor(selector) {
         this.$formElement = $(selector);
@@ -15,14 +14,12 @@ class FormHandler {
                     obj[current.name] = current.value;
                     return obj;
                 }, {})
-            spinner.start();
             const message = await dataFn(dataObj);
             if (message) {
                 alert(message);
             } else {
                 event.target.reset(); //event.target - reference to HTML element triggering the event
             }
-            spinner.stop();
         });
     }
 }

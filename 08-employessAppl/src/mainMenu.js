@@ -9,6 +9,7 @@ var $formAddEmployee = $('#formAddEmployee');
 var $formTable = $('#body-tr');
 
 var formHandler = new FormHandler('#formAddEmployee');
+var formHandlerGenerator = new FormHandler('#formRandomEmployee');
 
 var table = new Table("#formAddEmployee","#head-tr","#body-tr", "employeeId", function (obj) {
     db.removeFromStorage();
@@ -18,6 +19,12 @@ var db = new Storage();
 
 function functionLayout(obj) {
     db.addToStorage(obj);
+    table.tableDeleteRows();
+    table.addRows(db.storage);
+}
+
+function functionLayoutRandom(obj) {
+    db.generateRandomAdapter(obj);
     table.tableDeleteRows();
     table.addRows(db.storage);
 }
@@ -56,7 +63,8 @@ class mainMenu {
     openRandomForm(formSelector) {
         $(formSelector).on('click', function () {
             console.log("Click on random");
-            this.$cardRandomEmployee.toggleClass('hide')
+            this.$cardRandomEmployee.toggleClass('hide');
+            formHandlerGenerator.takingDataToObj(functionLayoutRandom);
         }.bind(this))
     }
     openTable() {

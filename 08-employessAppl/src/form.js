@@ -7,13 +7,12 @@ class FormHandler {
         this.$formSelector= $(selector);
     }
 
-    takingDataToObj (addToStorage) {
+    takingDataToObj (layoutFn) {
         this.$formSelector.on('submit', function (event) {
             console.log('waiting', this)
             event.preventDefault();
-
             let dataObj = this.fieldSerialization(this.$formSelector);
-            addToStorage(dataObj);
+            layoutFn(dataObj);
             event.target.reset();
         }.bind(this))
     }
