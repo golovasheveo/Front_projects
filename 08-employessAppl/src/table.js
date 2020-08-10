@@ -1,4 +1,6 @@
 import $ from 'jquery';
+import Spinner from "./spinner";
+
 function createHeaders($trHeadElement, headers, removeFn) {
     //getting <th> elements
     const $thElements = headers.map(header =>

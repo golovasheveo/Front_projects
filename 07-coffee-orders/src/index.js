@@ -68,13 +68,15 @@ async function addOrder(order) {
 }
 
 function hideSections() {
-    document.querySelectorAll('.card').forEach(c=>c.hidden = true);
+    document.querySelectorAll('.card').forEach(c => c.hidden = true)
 }
-
-function show() {
+function show(id) {
     hideSections();
     document.getElementById(id).hidden = false;
 }
+window.show = show;
+
+
 
 // async function addOrder(order) {
 //     spinner.start();

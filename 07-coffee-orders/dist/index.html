@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
+
 <section class="buttons">
-    <button onclick="show('new-order')">Add new order</button>
-    <button onclick="show('table-orders')">Show table Of Orders</button>
+    <button onclick="show('new-order')">Add New Order</button>
+    <button onclick="show('table-orders')">Show Table Of Orders</button>
 </section>
 <section id="new-order" hidden class="card">
     <div class="card-header">
@@ -84,21 +85,24 @@
     <!--        </tbody>-->
     <!--    </table>-->
 </section>
-<section id="table-orders"hidden class="card">
+<section id="table-orders" hidden class="card">
     <header class="card-header">
         <h3>
             Table of Orders
         </h3>
     </header>
-    <table class="table">
-        <thead>
-        <tr id="tr-id">
-        </tr>
-        </thead>
-        <tbody id="tbody-id">
+    <div class="card-body">
+        <table class="table">
 
-        </tbody>
-    </table>
+            <thead>
+            <tr id="tr-id">
+            </tr>
+            </thead>
+            <tbody id="tbody-id">
+
+            </tbody>
+        </table>
+    </div>
 </section>
 
 <script src="main.js"></script>
