@@ -23,7 +23,8 @@ function functionLayout(obj) {
     table.addRows(db.storage);
 }
 
-function functionLayoutRandom(obj) {
+
+function functionLayoutRandom(obj){
     db.generateRandomAdapter(obj);
     table.tableDeleteRows();
     table.addRows(db.storage);
@@ -63,7 +64,7 @@ class mainMenu {
     openRandomForm(formSelector) {
         $(formSelector).on('click', function () {
             console.log("Click on random");
-            this.$cardRandomEmployee.toggleClass('hide');
+            this.$cardRandomEmployee.toggleClass('hide')
             formHandlerGenerator.takingDataToObj(functionLayoutRandom);
         }.bind(this))
     }
@@ -71,7 +72,7 @@ class mainMenu {
         $domTable.on('click', function () {
             console.log("Click on table");
             this.tableEmployee.toggleClass('hide');
-            table.getHeader(formHandler.fieldSerialization($formAddEmployee))
+            table.getHeader(formHandler.fieldSerialization($formAddEmployee));
         }.bind(this))
     }
 

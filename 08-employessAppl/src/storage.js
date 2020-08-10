@@ -20,21 +20,32 @@ export default class Storage {
         this.storage.splice(indexOfElementToRemove,1);
     }
 
-    generateRandomAdapter (obj) {
-        console.log('Object from main form is: ', obj);
+    generateRandomAdapter(obj) {
+        // {number: "123", id: "123", min-salary: "123", max-salary: "213"}
+        console.log('RandomObj',obj);
+        console.log('RandomObjValues',Object.values(obj));
+        // ["123", "123", "123", "213"]
+
         this.generateEmployees(obj['number'], obj['id'], obj['min-salary'], obj['max-salary']);
+        // ["5", "3", "10", "100"]0: "5"1: "3"2: "10"3: "100"length: 4__proto__: Array(0)
+        // this.generateEmployees(Object.values());
+
+
 
     }
 
+
     generateEmployees (qty, countid, minSalary, maxSalary) {
 
-        console.log("Employees parametrs", qty, countid, minSalary, maxSalary );
         const namesObj = {
             male: ["Igor", "Nikita", "John", "Victor"],
             female: ["Vera", "Sasha", "Ira", "Valia"]
         }
+
         const sexArray = ["male", "female"]
+
         const titles = ['Manager', 'Developer', 'Designer', 'Tiler']
+
         var result = []
         for (var i = 0; i < qty; i++) {
             const genSex = getRandomFromArray(sexArray);
@@ -48,10 +59,9 @@ export default class Storage {
                 salary: getRandomInt(minSalary, maxSalary),
                 title: getRandomFromArray(titles),
             }
-
-            console.log("Generated employes on random", employees);
+            console.log("Generate employes", employees);
+            // result.push(employees);
             this.addToStorage(employees);
-            //            result.push(employees);
         }
         console.log("Result", result);
         return result;

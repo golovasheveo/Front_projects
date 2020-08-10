@@ -11,6 +11,7 @@ class FormHandler {
         this.$formSelector.on('submit', function (event) {
             console.log('waiting', this)
             event.preventDefault();
+
             let dataObj = this.fieldSerialization(this.$formSelector);
             layoutFn(dataObj);
             event.target.reset();

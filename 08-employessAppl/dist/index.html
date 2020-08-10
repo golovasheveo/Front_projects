@@ -2,109 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CoffeeOrder</title>
+    <title>Employees </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
 
-<section class="buttons">
-    <button onclick="show('new-order')">Add New Order</button>
-    <button onclick="show('table-orders')">Show Table Of Orders</button>
-</section>
-<section id="new-order" hidden class="card">
+<div class="card">
+    <div class="card-body">
+        <div class="button-group d-flex justify-content-center ">
+            <button type="button" class="btn btn-primary btn-lg mr-3" id="openAddForm">Add New Employee</button>
+            <button type="button" class="btn btn-secondary btn-lg mr-3" id="openRandomForm">Employees Generation</button>
+            <button type="button" class="btn btn-secondary btn-lg mr-3" id="openTable">Show Employees</button>
+        </div>
+    </div>
+</div>
+
+
+<!--ADD EMPLOYEE-->
+<div class="card m-5 hide" id="cardAddEmployee">
     <div class="card-header">
-        <h3>Coffee Order Form</h3>
+        <h3>Employee Data</h3>
     </div>
-
-    <div class="d-flex position-absolute h-100 w-100 justify-content-center align-items-center invisible shadow p-3" id="spinnerId">
-        <div class="spinner-border" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-
-    <div class="card-body" >
-        <form id="form-order">
-            <div class="form-group">
-                <label>Coffee</label>
-                <select class="form-control" name="coffee">
-                   <option value="espresso">Espresso</option>
-                    <option value="cappuccino ">Cappuccino</option>
-                    <option value="americana">Americana</option>
-                    <option value="latte">Latte</option>
-                    <option value="latte-machinate ">Latte-machinate</option>
-
-                </select>
+    <div class="card-body">
+        <form id="formAddEmployee">
+            <div class="form-group m-5 ">
+                <div class="row">
+                    <div class="col">
+                        <label class="text-center">Employee Identifier</label>
+                        <input class="form-control" name="employeeId" type="number" value="12345">
+                    </div>
+                    <div class="col">
+                        <label class="text-center">Email</label>
+                        <input class="form-control" name="email" type="email" value="Valet@EmailTest">
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input class="form-control" name="email" type="email" required >
-            </div>
+
             <div class="form-check">
-            <label>
-                <input type="radio" name="size" value="short" checked>
-                Short
-            </label>
-        </div>
-            <div class="form-check">
-                <label>
-                    <input type="radio" name="size" value="medium">
-                    Medium
+                <input class="form-check-input" type="radio" name="sex" id="male" value="male" checked>
+                <label class="form-check-label" for="male">
+                    Male
                 </label>
             </div>
             <div class="form-check">
-                <label>
-                    <input type="radio" name="size" value="long">
-                    Long
+                <input class="form-check-input" type="radio" name="sex" id="female" value="female">
+                <label class="form-check-label" for="female">
+                    Female
                 </label>
             </div>
+
             <div class="form-group">
-                <label>Flavor</label>
-                <select class="form-control" name="flavor">
-                    <option value="none">None</option>
-                    <option value="vanilla">Vanilla</option>
-                    <option value="cinnamon">Cinnamon</option>
-                    <option value="caramel">Caramel</option>
-                    <option value="mocha">Mocha</option>
-                </select>
+                <div class="row">
+                    <div class="col">
+                        <label class="text-center">Employees Name</label>
+                        <input class="form-control" name="employeeName" value="BobTest">
+                    </div>
+                    <div class="col">
+                        <label class="text-center">Salary</label>
+                        <input class="form-control" name="salary" type="number" value="5000">
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="text-center">Title</label>
+                            <select class="form-control" name="title">
+<!--                                <option value="" selected disabled>COFFEEE...</option>-->
+                                <option value="wage">Wage Employee</option>
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="americano">Americano</option>
+                                <option value="latte">Latte</option>
+                                <option value="latte-macchiato">Latte-macchiato</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="form-group">
-                <label>Strength</label>
-                <input name="strength" type="range" class="form-control-range">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-primary" type="reset">Reset</button>
+
+
+        </form>
+    </div>
+</div>
+<!--END! ADD EMPLOYEE-->
+
+
+<!--RANDOM EMPLOYEE-->
+<div class="card m-5 hide" id="cardRandomEmployee">
+    <div class="card-body border">
+        <div class="card-header">
+            <h3>Employees Generation Data</h3>
+        </div>
+
+
+        <form id="formRandomEmployee">
+            <div class="form-group m-5">
+                <div class="row">
+                    <div class="col">
+                        <label>Number of Employees</label>
+                        <input type="text" class="form-control" placeholder="*" name="number">
+
+                    </div>
+                    <div class="col">
+                        <label>Number of ID digits</label>
+                        <input type="text" class="form-control" placeholder="*" name="id">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Minimal Salary</label>
+                        <input type="text" class="form-control" placeholder="*" name="min-salary">
+                    </div>
+                    <div class="col">
+                        <label>Maximal Salary</label>
+                        <input type="text" class="form-control" placeholder="*" name="max-salary">
+                    </div>
+                </div>
+
             </div>
             <button class="btn btn-primary" type="submit">Submit</button>
             <button class="btn btn-primary" type="reset">Reset</button>
         </form>
     </div>
-<!--    <table class="table">-->
-<!--        <thead>-->
-<!--        <tr id="tr-id">-->
-<!--        </tr>-->
-<!--        </thead>-->
-<!--        <tbody id="tbody-id">-->
+</div>
+<!--END RANDOM EMPLOYEE-->
 
-<!--        </tbody>-->
-<!--    </table>-->
-</section>
-<section id="table-orders" hidden class="card">
-    <header class="card-header">
-        <h3>
-            Table of Orders
-        </h3>
-    </header>
+<div class="card m-5 hide" id="tableEmployee">
     <div class="card-body">
-        <table class="table">
 
+        <div class="card-header">
+            <h3>Employees Table</h3>
+        </div>
+
+        <table class="table">
             <thead>
-            <tr id="tr-id">
+            <tr class="table-light"><i class="fas fa-grin-tongue-wink"></i></tr>
+            <tr id="head-tr">
+                <!--                    <th>
+                                        </th>-->
             </tr>
             </thead>
-            <tbody id="tbody-id">
-
+            <tbody id="body-tr">
+            <!--                    <tr>-->
+            <!--                        <td>-->
+            <!--                            -->
+            <!--                        </td>-->
+            <!--                    </tr>-->
             </tbody>
         </table>
     </div>
-</section>
+</div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="main.js"></script>
+<!--<script src="../src/form.js"></script>-->
+<!--<script src="../src/storage.js"></script>-->
+<!--<script src="../src/table.js"></script>-->
+<!--<script src="../src/index.js"></script>-->
 </body>
 </html>

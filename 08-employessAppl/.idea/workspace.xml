@@ -26,24 +26,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ced18369-4c06-446b-9b9c-07651c25ffdf" name="Default Changelist" comment="add flag to empl">
-      <change afterPath="$PROJECT_DIR$/../07-coffee-orders/src/orders-server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../50-json-server/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../50-json-server/.idea/50-json-server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../50-json-server/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../50-json-server/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../50-json-server/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../50-json-server/orders.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../07-coffee-orders/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07-coffee-orders/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/src/form-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07-coffee-orders/src/form-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07-coffee-orders/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/src/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07-coffee-orders/src/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage-server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/table.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,12 +70,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Front_projects\08-employessAppl\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Front_projects\08-employessAppl\dist" />
     </key>
@@ -119,6 +113,7 @@
       <workItem from="1596628529157" duration="18680000" />
       <workItem from="1596734432906" duration="28745000" />
       <workItem from="1596961242549" duration="12067000" />
+      <workItem from="1597058226142" duration="1103000" />
     </task>
     <task id="LOCAL-00001" summary="Add emlp 0508">
       <created>1596630494715</created>
