@@ -1,5 +1,3 @@
-import {FormHandler} from "./form";
-
 export default class Storage {
     constructor(){
         this.storage = [];
@@ -8,15 +6,13 @@ export default class Storage {
     addToStorage (objToAdd) {
         this.storage.push(objToAdd);
         console.log('storage state after adding:', this.storage)
-
     }
 
     removeFromStorage (uniqValue, keyID) {
 
-        var indexOfElementToRemove = this.storage.findIndex(function (currentObjInDataStorage) {
+        const indexOfElementToRemove = this.storage.findIndex(function (currentObjInDataStorage) {
             return uniqValue === currentObjInDataStorage[keyID]
-
-        })
+        });
         this.storage.splice(indexOfElementToRemove,1);
     }
 
@@ -47,18 +43,18 @@ export default class Storage {
         const titles = ['Manager', 'Developer', 'Designer', 'Tiler']
 
         var result = []
-        for (var i = 0; i < qty; i++) {
+        for (let i = 0; i < qty; i++) {
             const genSex = getRandomFromArray(sexArray);
             const genName = getRandomFromArray(namesObj[genSex])
             const genId = getRandomInt(1, 10 ** countid - 1)
-            var employees = {
+            const employees = {
                 id: genId,
                 mail: name.toLowerCase() + genId + "@jetbrains.com",
                 sex: genSex,
                 name: genName,
                 salary: getRandomInt(minSalary, maxSalary),
                 title: getRandomFromArray(titles),
-            }
+            };
             console.log("Generate employes", employees);
             // result.push(employees);
             this.addToStorage(employees);
@@ -78,12 +74,10 @@ function getRandomInt(min, max)
     return Math.floor(Math.random() * (max - min + 1)) + parseInt(min);
 }
 
-function groupBySalary() {
-    var result = _.groupBy(arr,function (sal) {
-        var minIntervalValue = Math.floor(sal.salary / interval) * interval;
-        return minIntervalValue;
+function groupBySalary(interval) {
+    return _.groupBy(arr, function (sal) {
+        return Math.floor(sal.salary / interval) * interval;
     })
-    return result
 }
 
 export {Storage}

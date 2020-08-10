@@ -25,16 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ced18369-4c06-446b-9b9c-07651c25ffdf" name="Default Changelist" comment="add flag to empl">
-      <change afterPath="$PROJECT_DIR$/src/storage-server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu.js" afterDir="false" />
+    <list default="true" id="ced18369-4c06-446b-9b9c-07651c25ffdf" name="Default Changelist" comment="Update">
       <change beforePath="$PROJECT_DIR$/src/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/table.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +105,7 @@
       <workItem from="1596628529157" duration="18680000" />
       <workItem from="1596734432906" duration="28745000" />
       <workItem from="1596961242549" duration="12067000" />
-      <workItem from="1597058226142" duration="1103000" />
+      <workItem from="1597058226142" duration="1437000" />
     </task>
     <task id="LOCAL-00001" summary="Add emlp 0508">
       <created>1596630494715</created>
@@ -164,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596966662506</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update">
+      <created>1597059549264</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597059549264</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +200,8 @@
     <MESSAGE value="class mainMenu" />
     <MESSAGE value="MasterCommit" />
     <MESSAGE value="add flag to empl" />
-    <option name="LAST_COMMIT_MESSAGE" value="add flag to empl" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596642851648">
