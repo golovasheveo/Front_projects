@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
-<div class="card">
+<section class="buttons">
+    <button onclick="show('new-order')">Add new order</button>
+    <button onclick="show('table-orders')">Show table Of Orders</button>
+</section>
+<section id="new-order" hidden class="card">
     <div class="card-header">
         <h3>Coffee Order Form</h3>
     </div>
@@ -22,7 +26,7 @@
             <div class="form-group">
                 <label>Coffee</label>
                 <select class="form-control" name="coffee">
-                   <option value="espresso">Espresso</option>
+                    <option value="espresso">Espresso</option>
                     <option value="cappuccino ">Cappuccino</option>
                     <option value="americana">Americana</option>
                     <option value="latte">Latte</option>
@@ -35,11 +39,11 @@
                 <input class="form-control" name="email" type="email" required >
             </div>
             <div class="form-check">
-            <label>
-                <input type="radio" name="size" value="short" checked>
-                Short
-            </label>
-        </div>
+                <label>
+                    <input type="radio" name="size" value="short" checked>
+                    Short
+                </label>
+            </div>
             <div class="form-check">
                 <label>
                     <input type="radio" name="size" value="medium">
@@ -70,6 +74,22 @@
             <button class="btn btn-primary" type="reset">Reset</button>
         </form>
     </div>
+    <!--    <table class="table">-->
+    <!--        <thead>-->
+    <!--        <tr id="tr-id">-->
+    <!--        </tr>-->
+    <!--        </thead>-->
+    <!--        <tbody id="tbody-id">-->
+
+    <!--        </tbody>-->
+    <!--    </table>-->
+</section>
+<section id="table-orders"hidden class="card">
+    <header class="card-header">
+        <h3>
+            Table of Orders
+        </h3>
+    </header>
     <table class="table">
         <thead>
         <tr id="tr-id">
@@ -79,7 +99,7 @@
 
         </tbody>
     </table>
-</div>
+</section>
 
 <script src="main.js"></script>
 </body>

@@ -67,6 +67,15 @@ async function addOrder(order) {
     }
 }
 
+function hideSections() {
+    document.querySelectorAll('.card').forEach(c=>c.hidden = true);
+}
+
+function show() {
+    hideSections();
+    document.getElementById(id).hidden = false;
+}
+
 // async function addOrder(order) {
 //     spinner.start();
 //         const res = await coffeeOrders.addOrder(order);
