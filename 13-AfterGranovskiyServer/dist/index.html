@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Rest Api</h3>
+        </div>
+
+        <div class="card-body" >
+            <form id="form-order">
+
+                <div class="form-group m-5 border">
+                    <label class="text-primary">Create object to be sent to DB</label>
+                    <div class="row m-5 ">
+                        <div class="col">
+                            <label>Name</label>
+                            <input class="form-control" name="name" type="text" value="James">
+                        </div>
+                        <div class="col">
+                            <label>Second-name</label>
+                            <input class="form-control" name="second-name" type="text" value="Bond">
+                        </div>
+                        <div class="col">
+                            <label>Adding to DB</label>
+                            <input class="form-control" name="id" type="number" value="7">
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="form-group m-5">
+                        <button type="submit" class="btn btn-primary" onclick="serializeFields('add')">Add</button>
+                        <button type="submit" class="btn btn-primary"  onclick="">Remove</button>
+                        <button type="submit" class="btn btn-primary"  onclick="serializeFields('update')">Update</button>
+                    </div>
+
+
+            </form>
+        </div>
+
+        <section id="table-orders" class="card">
+            <header class="card-header">
+                <h3>
+                    Table of Orders
+                </h3>
+            </header>
+            <div class="card-body">
+                <table class="table">
+
+                    <thead>
+                    <tr id="tr-id">
+                    </tr>
+                    </thead>
+                    <tbody id="tbody-id">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+
+<script src="main.js"></script>
+</body>
+</html>

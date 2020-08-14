@@ -25,9 +25,6 @@ export default class Storage {
         this.generateEmployees(obj['number'], obj['id'], obj['min-salary'], obj['max-salary']);
         // ["5", "3", "10", "100"]0: "5"1: "3"2: "10"3: "100"length: 4__proto__: Array(0)
         // this.generateEmployees(Object.values());
-
-
-
     }
 
 

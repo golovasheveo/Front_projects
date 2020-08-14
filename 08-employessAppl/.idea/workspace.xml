@@ -25,7 +25,40 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ced18369-4c06-446b-9b9c-07651c25ffdf" name="Default Changelist" comment="Update">
+    <list default="true" id="ced18369-4c06-446b-9b9c-07651c25ffdf" name="Default Changelist" comment="groupBySalary">
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/.idea/13-AfterGranovskiyServer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/dist/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/src/form-handler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/src/server-client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/src/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-AfterGranovskiyServer/src/testAsync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/.idea/20-pictureScan.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/dist/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/npminstall.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/src/client-server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/src/form-handler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-pictureScan/src/render.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../50-json-server/mainDB.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-coffee-orders/src/orders-server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +138,11 @@
       <workItem from="1596628529157" duration="18680000" />
       <workItem from="1596734432906" duration="28745000" />
       <workItem from="1596961242549" duration="12067000" />
-      <workItem from="1597058226142" duration="1437000" />
+      <workItem from="1597058226142" duration="5385000" />
+      <workItem from="1597140144010" duration="1499000" />
+      <workItem from="1597250114848" duration="7000" />
+      <workItem from="1597306822958" duration="618000" />
+      <workItem from="1597317154161" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="Add emlp 0508">
       <created>1596630494715</created>
@@ -163,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597059549264</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="groupBySalary">
+      <created>1597059865051</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597059865051</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +245,8 @@
     <MESSAGE value="MasterCommit" />
     <MESSAGE value="add flag to empl" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="groupBySalary" />
+    <option name="LAST_COMMIT_MESSAGE" value="groupBySalary" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596642851648">
@@ -212,22 +257,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="515" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1596995169689" />
-    <state width="1493" height="105" key="GridCell.Tab.0.bottom" timestamp="1596998403797">
+    <state width="1493" height="105" key="GridCell.Tab.0.bottom" timestamp="1597068509334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="105" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596998403797" />
-    <state width="1493" height="105" key="GridCell.Tab.0.center" timestamp="1596998403796">
+    <state width="1493" height="105" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597068509334" />
+    <state width="1493" height="105" key="GridCell.Tab.0.center" timestamp="1597068509334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="105" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596998403796" />
-    <state width="1493" height="105" key="GridCell.Tab.0.left" timestamp="1596998403795">
+    <state width="1493" height="105" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597068509334" />
+    <state width="1493" height="105" key="GridCell.Tab.0.left" timestamp="1597068509333">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="105" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596998403795" />
-    <state width="1493" height="105" key="GridCell.Tab.0.right" timestamp="1596998403796">
+    <state width="1493" height="105" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597068509333" />
+    <state width="1493" height="105" key="GridCell.Tab.0.right" timestamp="1597068509334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="105" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596998403796" />
+    <state width="1493" height="105" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597068509334" />
     <state x="585" y="114" key="RollbackChangesDialog" timestamp="1596966576091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -240,10 +285,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="657" y="326" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1596735414780" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596966747558">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597059560506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596966747558" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597059560506" />
     <state x="650" y="146" width="461" height="532" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1596966733470">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

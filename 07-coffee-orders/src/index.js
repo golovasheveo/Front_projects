@@ -9,7 +9,7 @@ const URL ='http://localhost:3000/orders'
 var spinner = new Spinner('#spinnerId');
 
 const formOrder = new FormHandler('#form-order');
-const coffeeOrders = new OrdersServer(URL, );
+const coffeeOrders = new OrdersServer(URL);
 const headersKeys =  {
    email: 'Email address',
     coffee: 'Coffee',
@@ -23,14 +23,13 @@ const removeData = {
     removeFn: async function(email) {
         try {
             spinner.start();
-            const res = await coffeeOrders.removeOrder(email);
-            return res;
+            await coffeeOrders.removeOrder(email);
+            return true;
         }catch (error) {
-            return false;
+            return error;
         }finally {
             spinner.stop();
         }
-
     },
     message: 'order with email'
 }
@@ -61,22 +60,11 @@ async function addOrder(order) {
         tableOrders.addRow(order);
         return '';
     }catch (error) {
-        return `${removeData.message} ${order.email} already exists`;
+        return error;
     }finally {
         spinner.stop();
     }
 }
-
-function hideSections() {
-    document.querySelectorAll('.card').forEach(c => c.hidden = true)
-}
-function show(id) {
-    hideSections();
-    document.getElementById(id).hidden = false;
-}
-window.show = show;
-
-
 
 // async function addOrder(order) {
 //     spinner.start();
@@ -90,3 +78,17 @@ window.show = show;
 //    return '';
 // }
 
+
+
+function hideSections() {
+ document.querySelectorAll('.card').forEach(c => c.hidden = true)
+}
+function show(id) {
+    hideSections();
+    document.getElementById(id).hidden = false;
+}
+
+window.show = show;
+
+// const App = window.App || {};
+// window.App.show = show;

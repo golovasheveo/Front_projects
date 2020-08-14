@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture Recognition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="card">
+
+    <section class="card-body p-1 m-1">
+
+        <div class="popover-header p-1 m-1">
+            <h5 align="center">Picture Recognition</h5>
+        </div>
+
+
+        <form id="main-form" class="form-text">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="input-url">     URL:</span>
+                    </div>
+                    <input class="form-control" name="link" type="url" value="https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg" aria-describedby="basic-addon3">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="input-lang">Language:</span>
+                    </div>
+                    <input class="form-control" aria-describedby="basic-addon3" name="language" type="text" value="en">
+                </div>
+                <div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" onclick="">Recognize</button>
+                    <div class="spinner-border text-primary invisible p-3" style="position: absolute; top: 50%; left: 50%; margin-top: -1.5rem; margin-left: -1.5rem; width: 3rem; height: 3rem; " role="status" id="spinnerId" >
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </form>
+    </section>
+
+    <section id="picture-recognition" class="card-body p-1 m-1 row">
+
+        <div id="tags" class="col">
+<!--                        Insert tags list-->
+<!--            <ul class="list-group list-group-flush">-->
+<!--                <li class="badge badge-primary p-1 m-1" style="font-size: medium">Cras justo odio</li>-->
+<!--                <li class="badge badge-secondary">Dapibus ac facilisis in</li>-->
+<!--                <li class="list-group-item">Morbi leo risus</li>-->
+<!--                <li class="list-group-item">Porta ac consectetur ac</li>-->
+<!--                <li class="list-group-item">Vestibulum at eros</li>-->
+<!--            </ul>-->
+        </div>
+
+        <div id="picture" class="col">
+            <!--            Insert picture-->
+
+        </div>
+
+        <div id="colors" class="col">
+<!--                        Insert colors list-->
+<!--            <ul class="list-group list-group-flush">-->
+<!--                <li class="badge text-dark" style="background-color: #beb6a9">Red</li>-->
+<!--                <li class="badge badge-danger">Green</li>-->
+<!--                <li class="list-group-item">Black</li>-->
+<!--                <li class="list-group-item">White</li>-->
+<!--                <li class="list-group-item">Yellow</li>-->
+<!--            </ul>-->
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
