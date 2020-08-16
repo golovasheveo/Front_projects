@@ -19,6 +19,11 @@ class Render {
         console.log("Children rendered #", $division);
         const link = object.link;
         $division.children().remove()
+
+        // <div class="spinner-border text-primary invisible p-3" style="position: absolute; top: 50%; left: 50%; margin-top: -1.5rem; margin-left: -1.5rem; width: 3rem; height: 3rem; " role="status" id="spinnerId" >
+        //     <span class="sr-only">Loading...</span>
+        // </div>
+
         const $PictureElement = $('<picture>');
 
         // const $ImageElement = $(`<img src="${link}"class="img-fluid img-thumbnail m-0 p-0" alt="Image not loading">`)
@@ -74,7 +79,29 @@ class Render {
         let $listGroup=$('<ul class="list-group list-group-flush">');
         $division.append($listGroup);
 
-        for (let i = 0; i < object.result.colors.image_colors.length; i++) {
+        object.result.colors.image_colors.forEach (colorObj => {
+            let colorRGB = {
+                b : colorObj.b,
+                g : colorObj.g,
+                r : colorObj.r
+            }
+
+            let colorHtmlCode = colorObj.html_code
+            let colorName = colorObj.closest_palette_color
+            console.log("color in colorName", colorName);
+
+            let colorText = this.checkColor(colorRGB.r, colorRGB.g, colorRGB.b);
+
+            let $listElement=$('<li>',{
+                class: `badge ${colorText} p-1 m-1`,
+                style: `background-color:${colorHtmlCode};font-size: medium`
+            });
+            $listElement.append(`${colorName}`);
+            $listGroup.append($listElement);
+        })
+
+
+/*        for (let i = 0; i < object.result.colors.image_colors.length; i++) {
             let colorRGB = {
                 b : object.result.colors.image_colors[i].b,
                 g : object.result.colors.image_colors[i].g,
@@ -92,7 +119,7 @@ class Render {
             });
             $listElement.append(`${colorName}`);
             $listGroup.append($listElement);
-        }
+        } */
     }
 
     checkColor(red, green, blue) {
@@ -105,8 +132,6 @@ class Render {
             return 'text-dark';
         }
     }
-
-
 }
 
 export {Render}

@@ -27,6 +27,7 @@ function getUrl(obj,source){
     return `${url}${image_url}&language=${lang}`;
 }
 
+
 export default class ClientServer {
     getProbability(inputObject) {
         return $.ajax(getUrl(inputObject,"tags"), {
@@ -49,5 +50,24 @@ export default class ClientServer {
                 console.log ("result colors",obj);
                 return obj;
             })
-        }
+    }
+
+    uploadFile(data) {
+        const url = "https://api.imagga.com/v2/uploads"
+        return $.ajax(url, {
+            type: 'POST',
+            headers: {
+                Authorization: 'Basic YWNjXzRkZDNkNzkxOTk5ZTI1ZTo1MDRlYWRkMWU3NGU5NGY1Zjk3YTA4ZmI5NTY4YzhkOQ=='
+            },
+            processData: false,
+            contentType: false,
+            data: data
+        }).then(obj => {
+            console.log ("File id",obj);
+            return obj;
+        })
+    }
 }
+
+// a=new FormData
+// a.append('')

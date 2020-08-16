@@ -5,10 +5,9 @@
     <title>Picture Recognition</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
-<body>
+<body class="position-relative">
 
 <div class="card">
-
     <section class="card-body p-1 m-1">
 
         <div class="popover-header p-1 m-1">
@@ -16,24 +15,27 @@
         </div>
 
 
+
         <form id="main-form" class="form-text">
-                <div class="input-group mb-3">
+
+            <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="input-url">     URL:</span>
                     </div>
                     <input class="form-control" name="link" type="url" value="https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg" aria-describedby="basic-addon3">
                 </div>
+
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="input-lang">Language:</span>
                     </div>
                     <input class="form-control" aria-describedby="basic-addon3" name="language" type="text" value="en">
                 </div>
-                <div>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block" onclick="">Recognize</button>
-                    <div class="spinner-border text-primary invisible p-3" style="position: absolute; top: 50%; left: 50%; margin-top: -1.5rem; margin-left: -1.5rem; width: 3rem; height: 3rem; " role="status" id="spinnerId" >
-                        <span class="sr-only">Loading...</span>
-                    </div>
+
+            <div>
+                            <button type="submit" class="btn btn-primary btn-block"  style="font-size: medium">Recognize image
+                                <span class="spinner-grow spinner-grow-sm invisible" role="status" aria-hidden="true" id="spinnerId"></span>
+                            </button>
                 </div>
             </form>
     </section>
@@ -57,6 +59,7 @@
         </div>
 
         <div id="colors" class="col">
+
 <!--                        Insert colors list-->
 <!--            <ul class="list-group list-group-flush">-->
 <!--                <li class="badge text-dark" style="background-color: #beb6a9">Red</li>-->
@@ -68,6 +71,13 @@
         </div>
 
     </section>
+
+<!--    <section id="testUpload">-->
+<!--        <div class="form-group text-right float-right">-->
+<!--            <input type="file" class="form-control-file" id="fileInput">-->
+<!--            <label for="fileInput">Enter URL or sent file from the local storage</label>-->
+<!--        </div>-->
+<!--    </section>-->
 
 </div>
 
