@@ -1,26 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Clock from "./Clock";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(props) {
+    return (
+        <Clock name={'Moshe'} interval ={5000}/>
+    );
 }
+
+
+// function App(props) {
+//   return (
+//     <div className="App">
+//         <img src={'logo192.png'}/>
+//         <h1>Welcome {props.name}</h1>
+//       <h2>Current data time</h2>
+//         <h3>{props.date.toLocaleString()}</h3>
+//     </div>
+//   );
+// }
 
 export default App;
