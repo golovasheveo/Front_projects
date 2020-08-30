@@ -1,8 +1,8 @@
 import React from "react";
-import {N_COLUMNS} from "../config/config";
+import settings from "../config/config";
 
 function getSize() {
-    return Math.min(window.innerHeight, window.innerWidth) / N_COLUMNS - 2;
+    return Math.min(window.innerHeight, window.innerWidth) / settings.N_COLUMNS - 2;
 }
 function getStyle(number: number) {
     return {
