@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Clock from "./Clock";
+import {HashRouter, Switch, Route, Redirect} from 'react-router-dom';
+import {Dashboard} from "./Dashboard";
+import {Clock} from "./Clock";
+import Toolbar from "./Toolbar";
+export default function App() {
+return <React.Fragment>
 
-function App(props) {
-    return (
-        <Clock name={'Moshe'} interval ={5000}/>
-    );
+    <HashRouter>
+        <Toolbar links={[{path:'/dashboard', label:'Dashboard'}, {path:'/clock', label: "Clock"}]}/>
+        <Redirect to={'/dashboard'}/>
+        <Switch>
+            <Route exact path={'/dashboard'} component={Dashboard}/>
+            <Route exact path={'/clock'} render={() => <Clock />}/>
+        </Switch>
+
+    </HashRouter>
+</React.Fragment>
 }
 
-
-// function App(props) {
-//   return (
-//     <div className="App">
-//         <img src={'logo192.png'}/>
-//         <h1>Welcome {props.name}</h1>
-//       <h2>Current data time</h2>
-//         <h3>{props.date.toLocaleString()}</h3>
-//     </div>
-//   );
-// }
-
-export default App;

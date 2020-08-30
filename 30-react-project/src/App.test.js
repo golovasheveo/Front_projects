@@ -1,9 +1,12 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe('test suit', () => {
+  it('test 1', () => {
+    expect(true).toEqual(true);
+  })
+  it('test 2', () => {
+    expect(3 * 5).toEqual(15);
+  })
+})
