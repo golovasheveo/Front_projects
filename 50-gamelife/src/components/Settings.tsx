@@ -6,6 +6,9 @@ import Button from '@material-ui/core/Button';
 
 
 const Settings = ()=> {
+
+    function changeSettings(row:number, color:number)
+
     return <React.Fragment>
         <Toolbar />
         <div style={{textAlign: 'center', paddingTop: 20}}>
