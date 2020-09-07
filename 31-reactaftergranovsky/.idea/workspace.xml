@@ -20,59 +20,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39582d4e-9884-495a-bb07-c01f907ee22b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../17-ClassScript/.idea/17-ClassScript.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/24082020.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/src/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/src/Game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/src/RandomPoint.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/src/Toolbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/src/components/Matrix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/src/components/Row.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/src/config/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/src/service/TransformNumbers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/src/utils/generatorTestArray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../30-react-project/src/utils/random.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27082020.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LevelOne.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LevelTwo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Toolbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Сontent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/.idea/32-typescript-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/dist/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/src/Color.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/src/Line.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/src/Person.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/src/Point.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/src/Rectangle.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/src/Shape.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../32-typescript-project/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/.idea/33-reacttypescript.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30-react-project/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30-react-project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../30-react-project/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30-react-project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../30-react-project/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30-react-project/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../30-react-project/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30-react-project/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../30-react-project/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30-react-project/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../30-react-project/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30-react-project/src/Clock.js" beforeDir="false" afterPath="$PROJECT_DIR$/../30-react-project/src/Clock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30-react-project/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../30-react-project/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Child.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/App.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/RandomEmployee.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/Routes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/config/Menu.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/library/MyTable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/library/Topbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/pages/DepartmentStatistics.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/pages/EmployeeForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/pages/Employees.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/pages/EmployeesForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/pages/EmployeesGeneration.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/pages/EmployeesSearch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/pages/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/components/pages/SalaryStatistics.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/config/Menu.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/models/Employee.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/serviceWorker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/services/EmployeesService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/services/EmployeesServiceMapImpl.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33-reacttypescript/src/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../50-gamelife/src/components/gamelife/components/app1.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../50-gamelife/src/components/gamelife/components/app2.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LevelOne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LevelTwo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Toolbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Сontent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../50-gamelife/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../50-gamelife/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +121,7 @@
       <workItem from="1598276914438" duration="15715000" />
       <workItem from="1598367358910" duration="879000" />
       <workItem from="1598521721230" duration="5041000" />
+      <workItem from="1599139466208" duration="30000" />
     </task>
     <servers />
   </component>
