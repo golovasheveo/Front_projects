@@ -48,6 +48,7 @@ export const MyTable: FC<Props> = (props: Props) => {
    const defaultRowsPerPage = props.defaultRowsPerPage || 5;
     const [rowsPerPage, setRowsPerPage] = React.useState(defaultRowsPerPage);
     const [page, setPage] = React.useState(0);
+    const classes = useStyles();
 function getHeaders(): JSX.Element[] {
  const cells: any[] = [];
 
@@ -106,7 +107,7 @@ function getRow(row: object, index: number, keys: string[]) : JSX.Element {
         setRowsPerPage(+event.target.value);
         setPage(0);
     };
-    const classes = useStyles();
+
     return <TableContainer component={Paper} elevation={3} className={classes.container}>
             <Table className={classes.table} size="small">
                 <TableHead >

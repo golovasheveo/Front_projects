@@ -5,6 +5,7 @@ type Props = {
     menu: {path: string, label: string}[]
 }
 
+
 const Topbar:React.FC<RouteComponentProps&Props> = (props: RouteComponentProps&Props) => {
     const menu = props.menu;
     function current(path: string): number {
@@ -17,7 +18,7 @@ const handleChange = (event: any, tabValue: number) => {
   setValue(tabValue);
 }
 return <React.Fragment>
-<Tabs onChange={handleChange} value={value} >
+<Tabs variant="scrollable" onChange={handleChange} value={value} >
     {menu.map(item => <Tab key={item.path}
     component={Link} to={item.path} label={item.label}>
 

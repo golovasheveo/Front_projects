@@ -1,0 +1,72 @@
+{
+  "orders": [
+    {
+      "id": "50000",
+      "nameClient": "Evgeniy",
+      "price": "1",
+      "coffetype": "Americano",
+      "userId": 1
+    },
+    {
+      "id": "cjvxpOI",
+      "nameClient": "",
+      "price": null,
+      "coffetype": "",
+      "userId": 1
+    },
+    {
+      "id": "RhESl8j",
+      "nameClient": "",
+      "price": null,
+      "coffetype": "",
+      "userId": 1
+    },
+    {
+      "id": "7HeL_RK",
+      "nameClient": "",
+      "price": null,
+      "coffetype": ""
+    },
+    {
+      "id": "8989",
+      "nameClient": "Golovashev",
+      "price": "2000",
+      "coffetype": "Cappuchino"
+    },
+    {
+      "id": "1000",
+      "nameClient": "green",
+      "price": "3",
+      "coffetype": "Americano"
+    },
+    {
+      "id": "999999",
+      "nameClient": "Vashay",
+      "price": "800",
+      "coffetype": "Americano"
+    },
+    {
+      "id": "5555",
+      "nameClient": "привет",
+      "price": "10000",
+      "coffetype": "Americano"
+    }
+  ],
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$M7YrrBIBHee0fdMi4R4RbuuYCgK17wAF4B92TrwvInoKGUWCy.Puu",
+      "id": 1
+    },
+    {
+      "email": "xpeh@mail.com",
+      "password": "$2a$10$xYUHM7ORP9PolPu7kikkL.VyEMsCikPK2a.ORUBs7Ujr2mT2WW9Pa",
+      "id": 2
+    },
+    {
+      "email": "XPEHBAM@mail.com",
+      "password": "$2a$10$aqNtDPSPZ05l72p3nVc1ROLuzHNKoT1m1poyC510aEtYtWGysgXa6",
+      "id": 3
+    }
+  ]
+}

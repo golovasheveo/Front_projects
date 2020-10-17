@@ -1,19 +1,19 @@
-import React from 'react'
+import React, {useRef, useState} from 'react'
 import EmployeesService from "../../services/EmployeesService";
 import Employee from "../../models/Employee";
 import Topbar from "../library/Topbar";
 import {employeesMenu} from "../../config/Menu";
 import {HeaderDescription, MyTable} from "../library/MyTable";
-import useTheme from "@material-ui/core/styles/useTheme";
 import DeleteIcon from '@material-ui/icons/Delete';
+import ConfirmationDialog from "../library/ConfirmDialog";
 type Props = {
     service: EmployeesService;
     employees: Employee[];
     refreshFn: () => void
 }
 const Employees: React.FC<Props> = (props: Props) => {
-    const theme = useTheme();
-    console.log(theme);
+    const [open, setOpen] = useState<boolean>(false);
+    const idRef = useRef<number>(0);
     const headers: Map<string, HeaderDescription> = new Map([
         ['id',{displayName: 'ID', numeric: false}],
         ['name', {displayName: 'Name', numeric: false}],
@@ -23,12 +23,18 @@ const Employees: React.FC<Props> = (props: Props) => {
     ]);
 
     function removeEmployee(emplObj: object) {
-        const id: number = (emplObj as Employee).id
-        if (window.confirm(`you are going to remove employee with id ${id}`)) {
-            props.service.removeEmployee(id);
-            props.refreshFn();
-        }
+        idRef.current = (emplObj as Employee).id
 
+        setOpen(true);
+
+
+    }
+    function onClose(res: boolean) {
+        setOpen(false);
+        if (res) {
+            props.service.removeEmployee(idRef.current);
+            props.refreshFn()
+        }
     }
 
     return <React.Fragment>
@@ -42,6 +48,8 @@ const Employees: React.FC<Props> = (props: Props) => {
                 return e1;
 
             })} actions={[{icon: <DeleteIcon/>, actionFn: removeEmployee}]}/>
+            <ConfirmationDialog title={'You are going remove'} open={open}
+                                content={`employee with id ${idRef.current}`} onClose={onClose}/>
     </React.Fragment>
 }
 export default Employees;
